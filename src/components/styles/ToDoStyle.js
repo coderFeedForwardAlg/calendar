@@ -6,9 +6,10 @@ export let ToDoStyle1 = styled.div`
 font: roboto;
 font-size: 25px;
 background: red;
-height: 100vh;
+min-height: 75vh;
 width: 25%;
-margin: 50px;
+margin: 40px;
+padding: 5px;
 
 @media (min-width: 420px) {
     font-size: 30px;
