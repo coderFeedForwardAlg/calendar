@@ -27,7 +27,7 @@ const Task = (props) => {
         // firbase remove task here !?!?  
     }
 
-    const [task, setTask] = useState(  <TaskStyle1 >
+    const [task, setTask] = useState(  <TaskStyle1>
                                             <CheckBox onClick={ finishTask}/>
                                             {props.text}
                                         </TaskStyle1>
