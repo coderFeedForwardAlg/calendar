@@ -2,10 +2,13 @@ import styled from '@emotion/styled'
 
 
 export let MainStyle1 = styled.div`
-postion: fixed;
-top: 0;
-padding: 50px;
+// position: fixed;
+// top: 0;
 background: green;
+width: 100vw;
 min-height: 100vh;
 height: auto;
+
+
+
 `;

@@ -3,7 +3,6 @@ import {MainStyle1} from './styles/MainStyle';
 
 
 import ToDo from './ToDo';
-import Task from './Task';
 import Calendar from './Calendar';
 
 const Main = () => {
@@ -13,7 +12,6 @@ const Main = () => {
                 <MainStyle1>
                     <ToDo/>
                     <Calendar>
-                      
                     </Calendar>
                 </MainStyle1>
                 

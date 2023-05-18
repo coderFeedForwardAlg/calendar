@@ -5,17 +5,21 @@ import Task from './Task';
 import { InputStyle } from './styles/InputStyle';
 const ToDo = () => {
 
-    let newTask = "";
-
+    let nextid = 0;
+    const [newTask, setNewTask] = useState("");
     const [tasks, setTasks] = useState([]);
 
     const handleToDoSubmit = (event)=>{
         event.preventDefault();
-        setTasks([tasks, <Task text={newTask}/>]);
-        newTask = "";
-        
+
+        // add to list of tasks 
+        setTasks([
+            ...tasks,
+            {id: nextid++, text: newTask} 
+          ]);
     }
 
+    
 
     return ( 
 
@@ -23,11 +27,14 @@ const ToDo = () => {
                 To Do List
                 <form onSubmit={handleToDoSubmit}>
                     <InputStyle placeholder="add a to do" onChange={(e)=>{
-                        newTask = e.target.value;
+                        setNewTask(e.target.value);
                         console.log(newTask)
                     }}/>
                 </form>
-                {tasks}
+                {/* put the list of tasks into the Task componant */}
+                {tasks.map(tasks => (
+                    <Task key={tasks.id} text={tasks.text} > </Task>
+                ))}
             </ToDoStyle1>
 
      );
