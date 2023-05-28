@@ -7,6 +7,6 @@ top:0;
 left: 0;
 height: 50px;
 width: 50px;
-color: red;
-border: 5px;
+background-color: green;
+border-radius: 5px;
 `;
