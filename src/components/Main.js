@@ -14,10 +14,12 @@ import Auth from './Auth';
 // } from '@material-ui/pickers';
 
 
+
 const Main = () => {
 // get list of tasks form firebase 
 let tasks = ["run", "clean", "code"]; 
 let isCompleted = [true, false, true];
+
 
     return ( 
         <div>
