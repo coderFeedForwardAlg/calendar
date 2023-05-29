@@ -1,7 +1,9 @@
 
 import {MainStyle1} from './styles/MainStyle';
+
 import ToDo from './ToDo';
 import Calendar from './Calendar';
+import Auth from './Auth';
 
 // meterial ui stuff 
 // import 'date-fns';
@@ -27,8 +29,8 @@ let isCompleted = [true, false, true];
                     {/* <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <KeyboardTimePicker/>
                     </MuiPickersUtilsProvider> */}
-                   hello
-                   
+                   <Auth/>
+
                 </MainStyle1>
                 
                 
